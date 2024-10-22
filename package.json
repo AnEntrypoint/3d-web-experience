@@ -7,8 +7,8 @@
   },
   "scripts": {
     "build": "lerna run --stream build",
-    "iterate": "npm run start -w @example/multi-user-3d-web-experience-server",
-    "start": "npm run build && lerna run --parallel --stream iterate",
+    "start": "npm run start -w @example/multi-user-3d-web-experience-server",
+    "iterate": "npm run build && lerna run --parallel --stream iterate",
     "type-check-all": "lerna run --stream --no-bail type-check",
     "test-all": "lerna run --parallel --stream --no-bail test",
     "lint-all": "lerna run --stream --no-bail lint",
